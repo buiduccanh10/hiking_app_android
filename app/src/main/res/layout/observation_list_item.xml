@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="412dp"
+        android:layout_height="83dp"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.427">
+
+        <ImageView
+            android:id="@+id/image_ob"
+            android:layout_width="38dp"
+            android:layout_height="44dp"></ImageView>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/obNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Observation name"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/obTimeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Observation time" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_detail_ob"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#FF8BC34A"
+            android:drawableLeft="@android:drawable/ic_menu_info_details"
+            android:onClick="details_ob_click"
+            android:padding="9dp"
+            android:textSize="24sp"
+            app:iconTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.43" />
+
+        <Button
+            android:id="@+id/btn_edit_ob"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#FF2196F3"
+            android:drawableLeft="@android:drawable/ic_menu_edit"
+            android:onClick="edit_ob_click"
+            android:padding="9dp"
+            android:textSize="24sp"
+            app:iconTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.725"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.426" />
+
+        <Button
+            android:id="@+id/btn_delete_ob"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#FF0000"
+            android:drawableLeft="@android:drawable/ic_menu_delete"
+            android:onClick="delete_ob_click"
+            android:padding="9dp"
+            android:textSize="24sp"
+            app:iconTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.864"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.428" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
